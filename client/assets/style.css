@@ -1,0 +1,302 @@
+:root {
+    --header-bg: #5ECF91; 
+    --brand-name-color: #F84988; 
+    --login-btn-bg: #808080;
+    --signup-btn-bg: #E8D700;
+    --signup-btn-text: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--header-bg);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #378D6A;
+}
+
+.brand-name {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    color: var(--brand-name-color); 
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-end {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-signup,
+.btn-login {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.btn-signup {
+    background-color: var(--signup-btn-bg);
+    border: none;
+    color: var(--signup-btn-text);
+}
+
+.btn-signup:hover {
+    background-color: #FFEA00;
+    cursor: pointer;
+}
+
+.btn-login {
+    background-color: var(--login-btn-bg);
+    border: none;
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: #606060;
+    cursor: pointer;
+}
+
+.d-flex.flex-wrap.align-items-center.justify-content-between {
+    width: 100%;
+}
+:root {
+    --header-bg: #5ECF91;
+    --brand-name-color: #F84988;
+    --login-btn-bg: #808080;
+    --signup-btn-bg: #E8D700;
+    --signup-btn-text: #000000;
+
+    /* New colors for the main content sections */
+    --main-bg-color: #C0FF72; /* The light lime green background */
+    --text-dark-green: #378D6A; /* Dark green for text and borders */
+    --get-btn-color: #5ECF91; /* Same as header green for GET button */
+    --get-btn-hover-color: #4CAF80; /* Slightly darker green on hover */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* This makes the background lime green for the whole page */
+    background-color: var(--main-bg-color);
+}
+
+/* --- HEADER STYLES (KEPT AS IS) --- */
+header {
+    background-color: var(--header-bg);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #378D6A;
+    position: relative; /* Ensure it's above other content */
+    z-index: 1000; /* High z-index to stay on top */
+}
+
+.brand-name {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    color: var(--brand-name-color);
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-end {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-signup,
+.btn-login {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.btn-signup {
+    background-color: var(--signup-btn-bg);
+    border: none;
+    color: var(--signup-btn-text);
+}
+
+.btn-signup:hover {
+    background-color: #FFEA00;
+    cursor: pointer;
+}
+
+.btn-login {
+    background-color: var(--login-btn-bg);
+    border: none;
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: #606060;
+    cursor: pointer;
+}
+
+.d-flex.flex-wrap.align-items-center.justify-content-between {
+    width: 100%;
+}
+
+/* --- MAIN CONTENT STYLES --- */
+
+.content-wrapper {
+    /* The main content area in the image (below the header) has the light lime background */
+    background-color: var(--main-bg-color);
+    padding: 30px 0; /* Add vertical padding for content separation from header/bottom */
+}
+
+.main-content-section {
+    padding-top: 40px; /* Space between header and content */
+    padding-bottom: 40px; /* Space between content and bottom text */
+}
+
+/* Left Column Styling */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    padding-left: 50px; /* Indent the text from the left edge */
+    padding-right: 20px; /* Ensure some space from the right column */
+}
+
+.main-heading {
+    font-family: 'Bebas Neue', sans-serif; /* A bold, condensed font like in the image */
+    font-size: 80px; /* Very large font size */
+    line-height: 0.9; /* Reduce line height for condensed look */
+    color: #000; /* Black text */
+    margin-bottom: 10px; /* Space between main heading and sub-text */
+    text-transform: lowercase; /* Default to lowercase if typed uppercase, or type lowercase in HTML */
+}
+
+.sub-text {
+    font-family: Arial, sans-serif; /* Or another clean sans-serif */
+    font-size: 16px;
+    color: #000;
+    margin-left: 5px; /* Slight indent to align with heading */
+    margin-top: 0;
+}
+
+/* Right Column Styling */
+.right-column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align table to top */
+    padding-right: 50px; /* Space from right edge */
+    padding-left: 20px; /* Space from left column */
+}
+
+.item-list-container {
+    width: 100%; /* Take full width of its column */
+    max-width: 400px; /* Limit max width for better readability */
+    background-color: transparent; /* Background is part of the main section */
+    border: 3px solid var(--text-dark-green); /* Dark green border around the table */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.item-header-row,
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* Light separator lines */
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.item-header-row {
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 2px solid var(--text-dark-green); /* Thicker line below headers */
+    margin-bottom: 10px;
+}
+
+.item-row {
+    font-size: 16px;
+}
+
+.last-item-row {
+    border-bottom: none; /* No border for the last item */
+}
+
+.item-header-text,
+.item-name {
+    text-align: left;
+}
+
+.price-header,
+.item-price {
+    text-align: right;
+    width: 80px; /* Fixed width for price column for alignment */
+    flex-shrink: 0; /* Prevent price from shrinking */
+}
+
+.btn-get {
+    background-color: var(--get-btn-color);
+    color: white; /* Text color for GET button */
+    border: none;
+    padding: 12px 30px;
+    font-size: 20px; /* Larger font size for prominence */
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px; /* Space above the button */
+    display: block; /* Make it a block element to take full width of parent */
+    width: 100%; /* Make button span full width of the table container */
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-get:hover {
+    background-color: var(--get-btn-hover-color);
+}
+
+/* Bottom Text Section Styling */
+.bottom-text-section {
+    padding: 40px 100px; /* Adjust padding to match the indention in the image */
+    font-family: Arial, sans-serif; /* Or a similar readable sans-serif */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000; /* Black text */
+    text-align: justify; /* Justify text as in the image */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .left-column,
+    .right-column {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-heading {
+        font-size: 60px;
+    }
+
+    .item-list-container {
+        max-width: none; /* Allow full width on smaller screens */
+    }
+
+    .bottom-text-section {
+        padding: 30px 20px; /* Reduce padding on smaller screens */
+    }
+}
